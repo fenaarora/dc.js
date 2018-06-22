@@ -43,6 +43,7 @@ d3.csv("morley.csv").then(function(experiments) {
     .yAxisLabel("This is the Y Axis!")
     .dimension(runDimension)
     .group(speedSumGroup)
+    .renderLabel(true)
     .controlsUseVisibility(true)
     .on('pretransition', function(chart) {
         chart.selectAll("rect.bar").on("click", function (d) {
